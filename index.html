@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David's Cleaning Services — Lagos' Premium Cleaning Experts</title>
+<meta name="description" content="House, office, post-construction, upholstery cleaning, fumigation and laundry across Lagos. Book instantly on WhatsApp.">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+<div class="bg-glow"></div>
+<canvas id="fx-canvas"></canvas>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13c0-4 3-8 7-9 4 1 7 5 7 9a7 7 0 1 1-14 0Z" fill="#04101a"/></svg>
+      </span>
+      <span class="brand-name">David's <span>Cleaning</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I need a cleaning quote.'); return false;">Book on WhatsApp</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section style="padding-top:96px; padding-bottom:70px;">
+  <div class="wrap" style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap:50px; align-items:center;">
+    <div class="reveal in">
+      <div class="eyebrow">Lagos-wide · Fully Insured Crews</div>
+      <h1>Spotless spaces,<br>engineered to <span style="background:var(--grad-brand); -webkit-background-clip:text; background-clip:text; color:transparent;">shine</span>.</h1>
+      <p class="lede">David's Cleaning Services brings hotel-grade cleaning to your home, office, or site — house cleaning, post-construction clean-up, upholstery, fumigation and laundry, all one WhatsApp message away.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:30px;">
+        <a class="btn btn-primary" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I would like to book a cleaning service.'); return false;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.42a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.03 14.7 2 12.04 2Z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="services.html">Explore Services</a>
+      </div>
+      <div style="display:flex; gap:28px; margin-top:44px; flex-wrap:wrap;">
+        <div><div style="font-family:var(--f-display); font-size:28px; font-weight:700;">500+</div><div style="color:var(--text-low); font-size:13px;">Homes &amp; offices cleaned</div></div>
+        <div><div style="font-family:var(--f-display); font-size:28px; font-weight:700;">6</div><div style="color:var(--text-low); font-size:13px;">Specialist services</div></div>
+        <div><div style="font-family:var(--f-display); font-size:28px; font-weight:700;">24/7</div><div style="color:var(--text-low); font-size:13px;">Booking on WhatsApp</div></div>
+      </div>
+    </div>
+
+    <div class="reveal in" style="position:relative; height:420px;">
+      <div id="hero-scene" style="position:absolute; inset:0;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES STRIP ===== -->
+<section style="padding-top:20px;">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">What We Do</div>
+      <h2>Six services. One standard: spotless.</h2>
+      <p class="lede" style="margin:0 auto;">Every job color-coded, tracked and confirmed — tap any service to request a quote instantly.</p>
+    </div>
+
+    <div class="grid-4" id="service-grid"></div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section>
+  <div class="wrap">
+    <div class="grid-2" style="align-items:center; gap:60px;">
+      <div class="reveal">
+        <div class="eyebrow">How It Works</div>
+        <h2>Booked in minutes, not phone tag.</h2>
+        <p class="lede">No apps to download, no long forms. Just WhatsApp — the way Lagos already does business.</p>
+      </div>
+      <div class="reveal" style="display:flex; flex-direction:column; gap:16px;">
+        <div class="glass" style="padding:22px 24px; display:flex; gap:16px; align-items:flex-start;">
+          <div style="font-family:var(--f-mono); color:var(--c-cyan); font-weight:600;">01</div>
+          <div><h3 style="margin-bottom:4px;">Message us your need</h3><p style="margin:0; font-size:14.5px;">Tell us the service, location and preferred date on WhatsApp.</p></div>
+        </div>
+        <div class="glass" style="padding:22px 24px; display:flex; gap:16px; align-items:flex-start;">
+          <div style="font-family:var(--f-mono); color:var(--c-magenta); font-weight:600;">02</div>
+          <div><h3 style="margin-bottom:4px;">Get a fast, fair quote</h3><p style="margin:0; font-size:14.5px;">We confirm scope and price within minutes — no hidden charges.</p></div>
+        </div>
+        <div class="glass" style="padding:22px 24px; display:flex; gap:16px; align-items:flex-start;">
+          <div style="font-family:var(--f-mono); color:var(--c-lime); font-weight:600;">03</div>
+          <div><h3 style="margin-bottom:4px;">We show up &amp; shine</h3><p style="margin:0; font-size:14.5px;">Trained, equipped crews arrive on time and leave it spotless.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Trusted Across Lagos</div>
+      <h2>What clients say</h2>
+    </div>
+    <div class="grid-3" id="testimonial-grid"></div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section>
+  <div class="wrap">
+    <div class="glass reveal" style="padding:56px; text-align:center; position:relative; overflow:hidden;">
+      <h2 style="margin-bottom:10px;">Ready for a cleaner space today?</h2>
+      <p class="lede" style="margin:0 auto 28px;">Chat with us now — most bookings are confirmed in under 10 minutes.</p>
+      <a class="btn btn-primary" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I need a cleaning quote.'); return false;">Chat on WhatsApp: +234 907 717 7641</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px;">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13c0-4 3-8 7-9 4 1 7 5 7 9a7 7 0 1 1-14 0Z" fill="#04101a"/></svg></span>
+          <span class="brand-name">David's <span>Cleaning</span></span>
+        </div>
+        <p style="font-size:14px; max-width:260px;">Lagos' trusted name for house, office and specialty cleaning — booked entirely on WhatsApp.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Deep Cleaning</a></li>
+          <li><a href="services.html">Post-Construction & Renovation</a></li>
+          <li><a href="services.html">Fumigation Services</a></li>
+          <li><a href="services.html">Upholstery & Carpet Care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:+2349077177641">+234 907 717 7641</a></li>
+          <li><a href="#" onclick="WA.open('Hello David\'s Cleaning Services'); return false;">Chat on WhatsApp</a></li>
+          <li>Lagos, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> David's Cleaning Services. All rights reserved.</span>
+      <span>Booking available 24/7 via WhatsApp</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" aria-label="Chat on WhatsApp" href="#" onclick="WA.open('Hello David\'s Cleaning Services'); return false;">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.42a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.03 14.7 2 12.04 2Zm5.8 14.16c-.24.68-1.4 1.3-1.93 1.35-.5.05-1.02.24-3.43-.72-2.9-1.16-4.76-4.1-4.9-4.29-.14-.19-1.17-1.55-1.17-2.96 0-1.41.74-2.1 1-2.39.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.68-.17 1.36Z"/></svg>
+</a>
+
+<script src="shared.js"></script>
+<script>
+  // Render services + testimonials from shared config
+  const grid = document.getElementById('service-grid');
+  const serviceCopy = {
+    deep: { icon: 'M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-8Z', desc: 'Thorough, top-to-bottom residential and office deep cleaning.' },
+    post: { icon: 'M3 20h18M6 20V9l6-5 6 5v11M9 20v-6h6v6', desc: 'Clearing dust, debris and residue from newly completed building projects.' },
+    upholstery: { icon: 'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v6a1 1 0 0 1-1 1h-1v2h-2v-2H8v2H6v-2H5a1 1 0 0 1-1-1v-6Z', desc: 'Specialized sofa, rug and mattress laundry services.' },
+    fumigation: { icon: 'M12 2v3M6 6l2 2M18 6l-2 2M4 14a8 8 0 0 1 16 0c0 4-3 5-3 8H7c0-3-3-4-3-8Z', desc: 'Pest control and elimination for homes and commercial facilities.' },
+  };
+  SITE.services.forEach(s => {
+    const c = serviceCopy[s.id];
+    const card = document.createElement('div');
+    card.className = 'glass reveal accent-' + (s.color === '#21e6ff' ? 'cyan' : s.color === '#ff3daf' ? 'magenta' : s.color === '#8bff5a' ? 'lime' : s.color === '#ffb648' ? 'amber' : s.color === '#9a6bff' ? 'violet' : 'coral');
+    card.style.cssText = 'padding:30px 26px; cursor:pointer; transition: transform .25s ease, border-color .25s ease;';
+    card.innerHTML = `
+      <div style="width:52px; height:52px; border-radius:14px; background:${s.color}22; display:grid; place-items:center; margin-bottom:18px; border:1px solid ${s.color}55;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="${c.icon}"/></svg>
+      </div>
+      <h3>${s.name}</h3>
+      <p style="font-size:14.5px; min-height:44px;">${c.desc}</p>
+      <span style="color:${s.color}; font-size:14px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">Get a quote →</span>
+    `;
+    card.addEventListener('mouseenter', () => { card.style.transform = 'translateY(-6px)'; card.style.borderColor = s.color + '88'; });
+    card.addEventListener('mouseleave', () => { card.style.transform = 'translateY(0)'; card.style.borderColor = 'var(--glass-border)'; });
+    card.addEventListener('click', () => WA.open(`Hello David's Cleaning Services, I'd like a quote for ${s.name}.`));
+    grid.appendChild(card);
+  });
+
+  const testimonials = [
+    { name: 'Chiamaka O.', area: 'Lekki Phase 1', text: 'Booked a deep clean on WhatsApp before a party — the crew arrived early and the apartment looked brand new.', color: '#21e6ff' },
+    { name: 'Tunde A.', area: 'Ikeja', text: 'Our office cleaning schedule has never been this reliable. Same team every week, always thorough.', color: '#ff3daf' },
+    { name: 'Ngozi E.', area: 'Ajah', text: 'Fumigation service was fast and odor-free by the next morning. Highly recommend for new tenants.', color: '#8bff5a' },
+  ];
+  const tgrid = document.getElementById('testimonial-grid');
+  testimonials.forEach(t => {
+    const el = document.createElement('div');
+    el.className = 'glass reveal';
+    el.style.cssText = 'padding:28px 26px;';
+    el.innerHTML = `
+      <div style="display:flex; gap:3px; margin-bottom:14px;">${'★★★★★'.split('').map(()=>`<span style="color:${t.color}">★</span>`).join('')}</div>
+      <p style="font-size:14.5px; color:var(--text-hi); margin-bottom:18px;">"${t.text}"</p>
+      <div style="font-weight:600; font-size:14px;">${t.name}</div>
+      <div style="color:var(--text-low); font-size:13px;">${t.area}, Lagos</div>
+    `;
+    tgrid.appendChild(el);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // --- Hero scene: layered floating cleaning-tool glyphs (CSS-animated SVG, no heavy deps) ---
+  const scene = document.getElementById('hero-scene');
+  const glyphs = [
+    { path: 'M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-8Z', color: '#21e6ff', top: '4%', left: '8%', size: 70, dur: '7s' },
+    { path: 'M6 20V9l6-5 6 5v11', color: '#ff3daf', top: '18%', left: '62%', size: 56, dur: '9s' },
+    { path: 'M12 2v3M6 6l2 2M18 6l-2 2M4 14a8 8 0 0 1 16 0c0 4-3 5-3 8H7c0-3-3-4-3-8Z', color: '#8bff5a', top: '52%', left: '4%', size: 58, dur: '8s' },
+    { path: 'M4 4h16v16H4V4Zm8 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z', color: '#ffb648', top: '62%', left: '58%', size: 64, dur: '10s' },
+    { path: 'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v6a1 1 0 0 1-1 1h-1v2h-2v-2H8v2H6v-2H5a1 1 0 0 1-1-1v-6Z', color: '#9a6bff', top: '2%', left: '40%', size: 50, dur: '11s' },
+  ];
+  glyphs.forEach((g, i) => {
+    const wrap = document.createElement('div');
+    wrap.style.cssText = `position:absolute; top:${g.top}; left:${g.left}; width:${g.size}px; height:${g.size}px; animation: float${i} ${g.dur} ease-in-out infinite;`;
+    wrap.innerHTML = `<div class="glass" style="width:100%; height:100%; display:grid; place-items:center; border-radius:20px; box-shadow:0 0 30px ${g.color}33;">
+      <svg width="52%" height="52%" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${g.path}"/></svg>
+    </div>`;
+    scene.appendChild(wrap);
+    const styleTag = document.createElement('style');
+    styleTag.textContent = `@keyframes float${i}{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-18px) rotate(${i%2?3:-3}deg);}}`;
+    document.head.appendChild(styleTag);
+  });
+</script>
+</body>
+</html>
