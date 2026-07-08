@@ -225,3 +225,71 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display:inline-flex; align-items:center; gap:6px; font-family: var(--f-mono); font-size:12px;
   padding:5px 12px; border-radius:100px; background: var(--glass-bg-strong); border:1px solid var(--glass-border); color: var(--text-mid);
 }
+
+/* ---------- Hero badge chip ---------- */
+.hero-badge{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:8px 16px 8px 8px; border-radius:100px;
+  background: var(--glass-bg-strong); border:1px solid var(--glass-border);
+  font-size:13px; color: var(--text-mid); margin-bottom:22px;
+}
+.hero-badge .dot{ width:8px; height:8px; border-radius:50%; background: var(--c-lime); box-shadow: 0 0 10px var(--c-lime); flex-shrink:0; }
+.hero-badge .avatars{ display:flex; }
+.hero-badge .avatars span{
+  width:22px; height:22px; border-radius:50%; border:2px solid var(--ink-950); margin-left:-8px;
+  display:grid; place-items:center; font-size:10px; font-weight:700; color:#04101a;
+}
+.hero-badge .avatars span:first-child{ margin-left:0; }
+
+/* ---------- Marquee ---------- */
+.marquee{ overflow:hidden; border-top:1px solid var(--glass-border); border-bottom:1px solid var(--glass-border); padding:22px 0; background: var(--glass-bg); }
+.marquee-track{ display:flex; width:max-content; animation: marquee-scroll 26s linear infinite; }
+.marquee-track span{
+  display:flex; align-items:center; gap:14px; font-family: var(--f-display); font-weight:600; font-size:19px;
+  color: var(--text-low); padding:0 28px; white-space:nowrap;
+}
+.marquee-track span i{ width:6px; height:6px; border-radius:50%; background: var(--c-lime); display:inline-block; }
+@keyframes marquee-scroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+
+/* ---------- Big service cards (2x2) ---------- */
+.service-card-lg{
+  padding:34px; border-radius: var(--r-lg); position:relative; overflow:hidden;
+  transition: transform .3s ease, border-color .3s ease; cursor:pointer;
+}
+.service-card-lg:hover{ transform: translateY(-6px); }
+.service-card-lg .top-row{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:26px; }
+.service-card-lg .num{ font-family: var(--f-mono); font-size:12px; color: var(--text-low); }
+.service-card-lg .arrow{
+  width:38px; height:38px; border-radius:50%; display:grid; place-items:center;
+  border:1px solid var(--glass-border); transition: transform .3s ease, background .3s ease;
+}
+.service-card-lg:hover .arrow{ transform: rotate(45deg); }
+
+/* ---------- Stats bar ---------- */
+.stats-bar{ display:grid; grid-template-columns: repeat(4,1fr); }
+.stats-bar .stat{ text-align:center; padding: 34px 16px; border-right:1px solid var(--glass-border); }
+.stats-bar .stat:last-child{ border-right:none; }
+.stats-bar .stat .num{ font-family:var(--f-display); font-weight:700; font-size: clamp(26px,3.4vw,38px); }
+.stats-bar .stat .label{ color: var(--text-low); font-size:13px; margin-top:6px; }
+@media (max-width:700px){ .stats-bar{ grid-template-columns: 1fr 1fr; } .stats-bar .stat:nth-child(2){ border-right:none; } .stats-bar .stat{ border-bottom:1px solid var(--glass-border); } }
+
+/* ---------- Gallery tiles ---------- */
+.gallery-tile{
+  position:relative; aspect-ratio: 4/3; border-radius: var(--r-md); overflow:hidden;
+  display:flex; align-items:flex-end; padding:20px; cursor:pointer;
+  border:1px solid var(--glass-border); transition: transform .3s ease;
+}
+.gallery-tile:hover{ transform: scale(1.02); }
+.gallery-tile .tile-label{ position:relative; z-index:2; font-family:var(--f-display); font-weight:600; font-size:16px; color:#fff; }
+.gallery-tile .tile-bg{ position:absolute; inset:0; z-index:1; }
+
+/* ---------- Newsletter ---------- */
+.newsletter-form{ display:flex; gap:8px; margin-top:14px; }
+.newsletter-form input{
+  flex:1; min-width:0; padding:11px 14px; border-radius:10px; background: var(--glass-bg-strong);
+  border:1px solid var(--glass-border); color: var(--text-hi); font-family: var(--f-body); font-size:13.5px;
+}
+.newsletter-form button{
+  padding:11px 16px; border-radius:10px; border:none; background: var(--grad-brand); color:#04101a;
+  font-weight:700; font-size:13px; cursor:pointer; white-space:nowrap;
+}
