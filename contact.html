@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Services — David's Cleaning Services</title>
-<meta name="description" content="House cleaning, post-construction cleaning, office cleaning, upholstery cleaning, fumigation and laundry services in Lagos.">
+<title>Contact Us — David's Cleaning Services</title>
+<meta name="description" content="Get in touch with David's Cleaning Services in Lagos. Message us on WhatsApp at +234 907 717 7641 for house, office and specialty cleaning.">
 <link rel="stylesheet" href="shared.css">
 </head>
 <body>
@@ -20,8 +20,8 @@
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
     <a class="nav-cta" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I need a cleaning quote.'); return false;">Book on WhatsApp</a>
@@ -32,21 +32,100 @@
 </header>
 
 <section style="padding-top:64px; padding-bottom:20px;">
-  <div class="wrap section-head reveal in">
-    <div class="eyebrow">Our Services</div>
-    <h1 style="font-size:clamp(32px,5vw,52px);">Six ways we keep Lagos spotless</h1>
-    <p class="lede">Tap any service below for full detail, or message us directly for a same-day quote.</p>
+  <div class="wrap section-head center reveal in">
+    <div class="eyebrow" style="justify-content:center;">Get In Touch</div>
+    <h1 style="font-size:clamp(32px,5vw,52px);">Let's clean something today</h1>
+    <p class="lede" style="margin:0 auto;">Fill the form and it opens straight into WhatsApp, or message us directly — we usually reply within minutes.</p>
   </div>
 </section>
 
-<section style="padding-top:0;" id="service-detail-list"></section>
+<section style="padding-top:10px;">
+  <div class="wrap" style="display:grid; grid-template-columns: 1fr 1fr; gap:40px; align-items:start;">
 
-<section>
-  <div class="wrap">
-    <div class="glass reveal" style="padding:50px; text-align:center;">
-      <h2 style="margin-bottom:10px;">Not sure which service you need?</h2>
-      <p class="lede" style="margin:0 auto 26px;">Describe your space on WhatsApp and we'll recommend the right package.</p>
-      <a class="btn btn-primary" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I\'m not sure which service I need — can you help?'); return false;">Ask on WhatsApp</a>
+    <!-- Contact form -->
+    <div class="glass reveal" style="padding:40px;">
+      <h3 style="margin-bottom:22px;">Request a callback</h3>
+      <form data-wa-form style="display:flex; flex-direction:column; gap:16px;">
+        <div>
+          <label for="name" style="display:block; font-size:13px; color:var(--text-mid); margin-bottom:7px;">Full name</label>
+          <input id="name" name="name" type="text" required placeholder="e.g. Ade Johnson"
+            style="width:100%; padding:13px 16px; border-radius:12px; background:var(--glass-bg-strong); border:1px solid var(--glass-border); color:var(--text-hi); font-family:var(--f-body); font-size:14.5px;">
+        </div>
+        <div>
+          <label for="phone" style="display:block; font-size:13px; color:var(--text-mid); margin-bottom:7px;">Phone number</label>
+          <input id="phone" name="phone" type="tel" required placeholder="e.g. 0803 123 4567"
+            style="width:100%; padding:13px 16px; border-radius:12px; background:var(--glass-bg-strong); border:1px solid var(--glass-border); color:var(--text-hi); font-family:var(--f-body); font-size:14.5px;">
+        </div>
+        <div>
+          <label for="service" style="display:block; font-size:13px; color:var(--text-mid); margin-bottom:7px;">Service needed</label>
+          <select id="service" name="service" required
+            style="width:100%; padding:13px 16px; border-radius:12px; background:var(--glass-bg-strong); border:1px solid var(--glass-border); color:var(--text-hi); font-family:var(--f-body); font-size:14.5px;">
+            <option value="">Select a service</option>
+            <option>Deep Cleaning</option>
+            <option>Post-Construction &amp; Post-Renovation</option>
+            <option>Upholstery &amp; Carpet Care</option>
+            <option>Fumigation Services</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div>
+          <label for="location" style="display:block; font-size:13px; color:var(--text-mid); margin-bottom:7px;">Location in Lagos</label>
+          <input id="location" name="location" type="text" placeholder="e.g. Lekki, Ikeja, Yaba"
+            style="width:100%; padding:13px 16px; border-radius:12px; background:var(--glass-bg-strong); border:1px solid var(--glass-border); color:var(--text-hi); font-family:var(--f-body); font-size:14.5px;">
+        </div>
+        <div>
+          <label for="message" style="display:block; font-size:13px; color:var(--text-mid); margin-bottom:7px;">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us more about the job..."
+            style="width:100%; padding:13px 16px; border-radius:12px; background:var(--glass-bg-strong); border:1px solid var(--glass-border); color:var(--text-hi); font-family:var(--f-body); font-size:14.5px; resize:vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top:6px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.42a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.03 14.7 2 12.04 2Z"/></svg>
+          Send via WhatsApp
+        </button>
+        <p style="font-size:12.5px; color:var(--text-low); text-align:center; margin:0;">Submitting opens WhatsApp with your details pre-filled — nothing is sent without you tapping send there.</p>
+      </form>
+    </div>
+
+    <!-- Direct details + scene -->
+    <div class="reveal" style="display:flex; flex-direction:column; gap:20px;">
+      <div class="glass" style="padding:30px; display:flex; gap:18px; align-items:center;">
+        <div style="width:50px; height:50px; border-radius:14px; background:#25D36622; border:1px solid #25D36655; display:grid; place-items:center; flex-shrink:0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.42a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.03 14.7 2 12.04 2Z"/></svg>
+        </div>
+        <div>
+          <div style="font-size:13px; color:var(--text-low);">WhatsApp</div>
+          <a href="#" onclick="WA.open('Hello David\'s Cleaning Services'); return false;" style="color:var(--text-hi); font-weight:600; font-size:16px; text-decoration:none;">+234 907 717 7641</a>
+        </div>
+      </div>
+      <div class="glass" style="padding:30px; display:flex; gap:18px; align-items:center;">
+        <div style="width:50px; height:50px; border-radius:14px; background:#21e6ff22; border:1px solid #21e6ff55; display:grid; place-items:center; flex-shrink:0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#21e6ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        </div>
+        <div>
+          <div style="font-size:13px; color:var(--text-low);">Call</div>
+          <a href="tel:+2349077177641" style="color:var(--text-hi); font-weight:600; font-size:16px; text-decoration:none;">+234 907 717 7641</a>
+        </div>
+      </div>
+      <div class="glass" style="padding:30px; display:flex; gap:18px; align-items:center;">
+        <div style="width:50px; height:50px; border-radius:14px; background:#ff3daf22; border:1px solid #ff3daf55; display:grid; place-items:center; flex-shrink:0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff3daf" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-7.58-7-12a7 7 0 0 1 14 0c0 4.42-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div>
+          <div style="font-size:13px; color:var(--text-low);">Service area</div>
+          <div style="color:var(--text-hi); font-weight:600; font-size:16px;">Lagos, Nigeria — all mainland &amp; island</div>
+        </div>
+      </div>
+      <div class="glass" style="padding:30px; display:flex; gap:18px; align-items:center;">
+        <div style="width:50px; height:50px; border-radius:14px; background:#8bff5a22; border:1px solid #8bff5a55; display:grid; place-items:center; flex-shrink:0;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8bff5a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        </div>
+        <div>
+          <div style="font-size:13px; color:var(--text-low);">Availability</div>
+          <div style="color:var(--text-hi); font-weight:600; font-size:16px;">Booking open 24/7 on WhatsApp</div>
+        </div>
+      </div>
+
+      <div id="contact-scene" style="position:relative; height:150px; margin-top:6px;"></div>
     </div>
   </div>
 </section>
@@ -88,7 +167,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> David's Cleaning Services. All rights reserved.</span>
+      <span>© <span class="year"></span> David's Cleaning Services. All rights reserved.</span>
       <span>Booking available 24/7 via WhatsApp</span>
     </div>
   </div>
@@ -100,52 +179,26 @@
 
 <script src="shared.js"></script>
 <script>
-  const details = {
-    deep: { icon: 'M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-8Z', tagline: 'Every corner, done right.', desc: 'Thorough, top-to-bottom residential and office deep cleaning — every surface, corner and fixture, not just the visible ones.', points: ['Kitchen degreasing & appliance wipe-down', 'Bathroom sanitation & descaling', 'Dusting, vacuuming & mopping all rooms', 'Window sills, skirting & light fixtures'] },
-    post: { icon: 'M3 20h18M6 20V9l6-5 6 5v11M9 20v-6h6v6', tagline: 'From site to shine.', desc: 'Clearing dust, debris and residue from newly completed building projects, so your space is move-in ready.', points: ['Cement & paint residue removal', 'Debris clearance & disposal', 'Deep floor scrubbing & polishing', 'Full window & glass cleaning'] },
-    upholstery: { icon: 'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v6a1 1 0 0 1-1 1h-1v2h-2v-2H8v2H6v-2H5a1 1 0 0 1-1-1v-6Z', tagline: 'Fabric, refreshed.', desc: 'Specialized sofa, rug and mattress laundry services — lifting stains, dust mites and odors from every fiber.', points: ['Steam & dry-foam extraction', 'Stain & odor treatment', 'Rug & carpet deep cleaning', 'Mattress sanitation'] },
-    fumigation: { icon: 'M12 2v3M6 6l2 2M18 6l-2 2M4 14a8 8 0 0 1 16 0c0 4-3 5-3 8H7c0-3-3-4-3-8Z', tagline: 'Pest-free, safely.', desc: 'Pest control and elimination for homes and commercial facilities — safe for family, pets and staff once cleared.', points: ['Full property inspection', 'Targeted safe-chemical treatment', 'Rodent & termite control', 'Post-treatment safety guidance'] },
-  };
-
-  const list = document.getElementById('service-detail-list');
-  SITE.services.forEach((s, i) => {
-    const d = details[s.id];
-    const flip = i % 2 === 1;
-    const row = document.createElement('div');
-    row.className = 'wrap';
-    row.style.cssText = 'padding: 40px 24px;';
-    row.innerHTML = `
-      <div class="glass reveal" style="padding:44px; display:grid; grid-template-columns: ${flip ? '1fr 1.3fr' : '1.3fr 1fr'}; gap:40px; align-items:center;">
-        ${flip ? '' : `<div>
-          <div style="width:60px; height:60px; border-radius:16px; background:${s.color}22; border:1px solid ${s.color}55; display:grid; place-items:center; margin-bottom:20px;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${d.icon}"/></svg>
-          </div>
-          <div class="eyebrow" style="color:${s.color};">${d.tagline}</div>
-          <h2>${s.name}</h2>
-          <p class="lede" style="margin-bottom:22px;">${d.desc}</p>
-          <a class="btn btn-primary" href="#" data-wa-quick="${s.name}">Get a Quote</a>
-        </div>`}
-        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px;">
-          ${d.points.map(p => `<li style="display:flex; gap:12px; align-items:flex-start; font-size:14.5px; color:var(--text-mid);">
-            <span style="flex-shrink:0; width:22px; height:22px; border-radius:50%; background:${s.color}22; border:1px solid ${s.color}55; display:grid; place-items:center; margin-top:1px;">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            </span>${p}</li>`).join('')}
-        </ul>
-        ${flip ? `<div>
-          <div style="width:60px; height:60px; border-radius:16px; background:${s.color}22; border:1px solid ${s.color}55; display:grid; place-items:center; margin-bottom:20px;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${d.icon}"/></svg>
-          </div>
-          <div class="eyebrow" style="color:${s.color};">${d.tagline}</div>
-          <h2>${s.name}</h2>
-          <p class="lede" style="margin-bottom:22px;">${d.desc}</p>
-          <a class="btn btn-primary" href="#" data-wa-quick="${s.name}">Get a Quote</a>
-        </div>` : ''}
-      </div>
-    `;
-    list.appendChild(row);
-  });
-
   document.querySelectorAll('#year, .year').forEach(el => el.textContent = new Date().getFullYear());
+
+  // Small row of floating cleaning-tool glyphs, consistent with the homepage scene
+  const scene = document.getElementById('contact-scene');
+  const glyphs = [
+    { path: 'M4 4h16v16H4V4Zm8 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z', color: '#ff6b6b', left: '4%', dur: '6.5s' },
+    { path: 'M12 2v3M6 6l2 2M18 6l-2 2M4 14a8 8 0 0 1 16 0c0 4-3 5-3 8H7c0-3-3-4-3-8Z', color: '#9a6bff', left: '38%', dur: '8s' },
+    { path: 'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v6a1 1 0 0 1-1 1h-1v2h-2v-2H8v2H6v-2H5a1 1 0 0 1-1-1v-6Z', color: '#ffb648', left: '72%', dur: '7s' },
+  ];
+  glyphs.forEach((g, i) => {
+    const wrap = document.createElement('div');
+    wrap.style.cssText = `position:absolute; top:10%; left:${g.left}; width:64px; height:64px; animation: cfloat${i} ${g.dur} ease-in-out infinite;`;
+    wrap.innerHTML = `<div class="glass" style="width:100%; height:100%; display:grid; place-items:center; border-radius:18px; box-shadow:0 0 26px ${g.color}33;">
+      <svg width="50%" height="50%" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${g.path}"/></svg>
+    </div>`;
+    scene.appendChild(wrap);
+    const styleTag = document.createElement('style');
+    styleTag.textContent = `@keyframes cfloat${i}{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-14px) rotate(${i%2?4:-4}deg);}}`;
+    document.head.appendChild(styleTag);
+  });
 </script>
 </body>
 </html>
