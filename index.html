@@ -35,23 +35,29 @@
 </header>
 
 <!-- ===== HERO ===== -->
-<section style="padding-top:96px; padding-bottom:70px;">
+<section style="padding-top:80px; padding-bottom:50px;">
   <div class="wrap" style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap:50px; align-items:center;">
     <div class="reveal in">
-      <div class="eyebrow">Lagos-wide · Fully Insured Crews</div>
+      <div class="hero-badge">
+        <span class="avatars">
+          <span style="background:var(--c-cyan);">C</span>
+          <span style="background:var(--c-magenta);">T</span>
+          <span style="background:var(--c-lime);">N</span>
+        </span>
+        <span class="dot"></span>
+        Trusted by 500+ homes &amp; offices in Lagos
+      </div>
       <h1>Spotless spaces,<br>engineered to <span style="background:var(--grad-brand); -webkit-background-clip:text; background-clip:text; color:transparent;">shine</span>.</h1>
-      <p class="lede">David's Cleaning Services brings hotel-grade cleaning to your home, office, or site — house cleaning, post-construction clean-up, upholstery, fumigation and laundry, all one WhatsApp message away.</p>
+      <p class="lede">David's Cleaning Services brings hotel-grade cleaning to your home, office or site — deep cleaning, post-construction clean-up, upholstery and carpet care, and fumigation, all one WhatsApp message away.</p>
       <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:30px;">
         <a class="btn btn-primary" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I would like to book a cleaning service.'); return false;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.42a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.03 14.7 2 12.04 2Z"/></svg>
           Book on WhatsApp
         </a>
-        <a class="btn btn-ghost" href="services.html">Explore Services</a>
-      </div>
-      <div style="display:flex; gap:28px; margin-top:44px; flex-wrap:wrap;">
-        <div><div style="font-family:var(--f-display); font-size:28px; font-weight:700;">500+</div><div style="color:var(--text-low); font-size:13px;">Homes &amp; offices cleaned</div></div>
-        <div><div style="font-family:var(--f-display); font-size:28px; font-weight:700;">6</div><div style="color:var(--text-low); font-size:13px;">Specialist services</div></div>
-        <div><div style="font-family:var(--f-display); font-size:28px; font-weight:700;">24/7</div><div style="color:var(--text-low); font-size:13px;">Booking on WhatsApp</div></div>
+        <a class="btn btn-ghost" href="services.html">
+          Explore Services
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
 
@@ -61,16 +67,45 @@
   </div>
 </section>
 
-<!-- ===== SERVICES STRIP ===== -->
-<section style="padding-top:20px;">
+<!-- ===== MARQUEE ===== -->
+<div class="marquee">
+  <div class="marquee-track" id="marquee-track"></div>
+</div>
+
+<!-- ===== STATS BAR ===== -->
+<section style="padding:0;">
+  <div class="wrap" style="padding-top:0;">
+    <div class="glass stats-bar reveal" style="margin-top:-1px; border-radius:0 0 var(--r-lg) var(--r-lg); border-top:none;">
+      <div class="stat"><div class="num" style="color:var(--c-cyan);">500+</div><div class="label">Homes &amp; offices cleaned</div></div>
+      <div class="stat"><div class="num" style="color:var(--c-magenta);">4</div><div class="label">Specialist services</div></div>
+      <div class="stat"><div class="num" style="color:var(--c-lime);">98%</div><div class="label">Client satisfaction</div></div>
+      <div class="stat"><div class="num" style="color:var(--c-amber);">24/7</div><div class="label">WhatsApp booking</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section style="padding-top:80px;">
   <div class="wrap">
     <div class="section-head center reveal">
       <div class="eyebrow" style="justify-content:center;">What We Do</div>
-      <h2>Six services. One standard: spotless.</h2>
+      <h2>Four services. One standard: spotless.</h2>
       <p class="lede" style="margin:0 auto;">Every job color-coded, tracked and confirmed — tap any service to request a quote instantly.</p>
     </div>
 
-    <div class="grid-4" id="service-grid"></div>
+    <div class="grid-2" id="service-grid"></div>
+  </div>
+</section>
+
+<!-- ===== GALLERY / OUR WORK ===== -->
+<section>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">Our Work</div>
+      <h2>Real jobs, real results</h2>
+      <p class="lede" style="margin:0 auto;">A glimpse into the spaces we've transformed across Lagos.</p>
+    </div>
+    <div class="grid-3" id="gallery-grid"></div>
   </div>
 </section>
 
@@ -132,7 +167,11 @@
           <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13c0-4 3-8 7-9 4 1 7 5 7 9a7 7 0 1 1-14 0Z" fill="#04101a"/></svg></span>
           <span class="brand-name">David's <span>Cleaning</span></span>
         </div>
-        <p style="font-size:14px; max-width:260px;">Lagos' trusted name for house, office and specialty cleaning — booked entirely on WhatsApp.</p>
+        <p style="font-size:14px; max-width:260px;">Lagos' trusted name for cleaning services — booked entirely on WhatsApp.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); WA.open('Hello David\'s Cleaning Services, please add me to your updates list. My email: ' + this.email.value); this.reset();">
+          <input type="email" name="email" placeholder="Your email for offers" required>
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
       <div>
         <h4>Services</h4>
@@ -176,28 +215,67 @@
   // Render services + testimonials from shared config
   const grid = document.getElementById('service-grid');
   const serviceCopy = {
-    deep: { icon: 'M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-8Z', desc: 'Thorough, top-to-bottom residential and office deep cleaning.' },
+    deep: { icon: 'M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-8Z', desc: 'Thorough, top-to-bottom residential and office deep cleaning — every surface, corner and fixture.' },
     post: { icon: 'M3 20h18M6 20V9l6-5 6 5v11M9 20v-6h6v6', desc: 'Clearing dust, debris and residue from newly completed building projects.' },
-    upholstery: { icon: 'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v6a1 1 0 0 1-1 1h-1v2h-2v-2H8v2H6v-2H5a1 1 0 0 1-1-1v-6Z', desc: 'Specialized sofa, rug and mattress laundry services.' },
+    upholstery: { icon: 'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v6a1 1 0 0 1-1 1h-1v2h-2v-2H8v2H6v-2H5a1 1 0 0 1-1-1v-6Z', desc: 'Specialized sofa, rug and mattress laundry services that lift stains and odors.' },
     fumigation: { icon: 'M12 2v3M6 6l2 2M18 6l-2 2M4 14a8 8 0 0 1 16 0c0 4-3 5-3 8H7c0-3-3-4-3-8Z', desc: 'Pest control and elimination for homes and commercial facilities.' },
   };
-  SITE.services.forEach(s => {
+  SITE.services.forEach((s, i) => {
     const c = serviceCopy[s.id];
     const card = document.createElement('div');
-    card.className = 'glass reveal accent-' + (s.color === '#21e6ff' ? 'cyan' : s.color === '#ff3daf' ? 'magenta' : s.color === '#8bff5a' ? 'lime' : s.color === '#ffb648' ? 'amber' : s.color === '#9a6bff' ? 'violet' : 'coral');
-    card.style.cssText = 'padding:30px 26px; cursor:pointer; transition: transform .25s ease, border-color .25s ease;';
+    card.className = 'glass reveal service-card-lg';
+    card.style.borderColor = 'var(--glass-border)';
     card.innerHTML = `
-      <div style="width:52px; height:52px; border-radius:14px; background:${s.color}22; display:grid; place-items:center; margin-bottom:18px; border:1px solid ${s.color}55;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="${c.icon}"/></svg>
+      <div class="top-row">
+        <div style="width:54px; height:54px; border-radius:14px; background:${s.color}22; display:grid; place-items:center; border:1px solid ${s.color}55;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="${c.icon}"/></svg>
+        </div>
+        <div class="arrow" style="border-color:${s.color}55;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="${s.color}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </div>
       </div>
-      <h3>${s.name}</h3>
-      <p style="font-size:14.5px; min-height:44px;">${c.desc}</p>
-      <span style="color:${s.color}; font-size:14px; font-weight:600; display:inline-flex; align-items:center; gap:6px;">Get a quote →</span>
+      <div class="num">0${i + 1}</div>
+      <h3 style="margin-top:8px;">${s.name}</h3>
+      <p style="font-size:14.5px;">${c.desc}</p>
+      <span style="color:${s.color}; font-size:14px; font-weight:600;">Get a quote →</span>
     `;
-    card.addEventListener('mouseenter', () => { card.style.transform = 'translateY(-6px)'; card.style.borderColor = s.color + '88'; });
-    card.addEventListener('mouseleave', () => { card.style.transform = 'translateY(0)'; card.style.borderColor = 'var(--glass-border)'; });
+    card.addEventListener('mouseenter', () => { card.style.borderColor = s.color + '88'; });
+    card.addEventListener('mouseleave', () => { card.style.borderColor = 'var(--glass-border)'; });
     card.addEventListener('click', () => WA.open(`Hello David's Cleaning Services, I'd like a quote for ${s.name}.`));
     grid.appendChild(card);
+  });
+
+  // Marquee: repeat service names + tagline, duplicated for seamless loop
+  const marqueeItems = [...SITE.services.map(s => s.name), 'Lagos-Wide Service', 'Book on WhatsApp'];
+  const track = document.getElementById('marquee-track');
+  for (let rep = 0; rep < 2; rep++) {
+    marqueeItems.forEach(txt => {
+      const span = document.createElement('span');
+      span.innerHTML = `<i></i>${txt}`;
+      track.appendChild(span);
+    });
+  }
+
+  // Gallery: color-coded glass tiles representing completed jobs (no external images, zero load risk)
+  const galleryItems = [
+    { label: 'Deep Clean — Lekki Apartment', color: '#21e6ff', icon: serviceCopy.deep.icon },
+    { label: 'Post-Construction — Ikeja Duplex', color: '#ff3daf', icon: serviceCopy.post.icon },
+    { label: 'Upholstery — Ajah Family Home', color: '#ffb648', icon: serviceCopy.upholstery.icon },
+    { label: 'Fumigation — Victoria Island Office', color: '#9a6bff', icon: serviceCopy.fumigation.icon },
+    { label: 'Deep Clean — Yaba Studio', color: '#21e6ff', icon: serviceCopy.deep.icon },
+    { label: 'Post-Construction — Ikoyi Site', color: '#ff3daf', icon: serviceCopy.post.icon },
+  ];
+  const ggrid = document.getElementById('gallery-grid');
+  galleryItems.forEach(g => {
+    const tile = document.createElement('div');
+    tile.className = 'gallery-tile reveal';
+    tile.innerHTML = `
+      <div class="tile-bg" style="background: radial-gradient(120% 120% at 20% 20%, ${g.color}55, transparent 60%), radial-gradient(120% 120% at 90% 90%, ${g.color}33, transparent 60%), var(--ink-900);"></div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="position:absolute; top:18px; right:18px; z-index:2; opacity:.85;"><path d="${g.icon}"/></svg>
+      <span class="tile-label">${g.label}</span>
+    `;
+    tile.addEventListener('click', () => WA.open(`Hello David's Cleaning Services, I saw your work on "${g.label}" — I'd like a similar service.`));
+    ggrid.appendChild(tile);
   });
 
   const testimonials = [
@@ -209,8 +287,9 @@
   testimonials.forEach(t => {
     const el = document.createElement('div');
     el.className = 'glass reveal';
-    el.style.cssText = 'padding:28px 26px;';
+    el.style.cssText = 'padding:28px 26px; position:relative;';
     el.innerHTML = `
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="${t.color}" style="opacity:.25; margin-bottom:6px;"><path d="M9.5 6C6 6 4 9 4 12.5S6 19 9.5 19c1 0 1.8-.3 2.4-.8-.2 2-1.7 3.3-3.9 3.6v1.7c3.7-.3 6-2.7 6-6.5V12c0-3.5-1.6-6-4.5-6Zm10 0c-3.5 0-5.5 3-5.5 6.5S16 19 19.5 19c1 0 1.8-.3 2.4-.8-.2 2-1.7 3.3-3.9 3.6v1.7c3.7-.3 6-2.7 6-6.5V12c0-3.5-1.6-6-4.5-6Z"/></svg>
       <div style="display:flex; gap:3px; margin-bottom:14px;">${'★★★★★'.split('').map(()=>`<span style="color:${t.color}">★</span>`).join('')}</div>
       <p style="font-size:14.5px; color:var(--text-hi); margin-bottom:18px;">"${t.text}"</p>
       <div style="font-weight:600; font-size:14px;">${t.name}</div>
