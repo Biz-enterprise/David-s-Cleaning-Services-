@@ -35,40 +35,80 @@
 </header>
 
 <!-- ===== HERO ===== -->
-<section style="padding-top:80px; padding-bottom:50px;">
-  <div class="wrap" style="display:grid; grid-template-columns: 1.1fr 0.9fr; gap:50px; align-items:center;">
-    <div class="reveal in">
-      <div class="hero-badge">
-        <span class="avatars">
-          <span style="background:var(--c-cyan);">C</span>
-          <span style="background:var(--c-magenta);">T</span>
-          <span style="background:var(--c-lime);">N</span>
-        </span>
-        <span class="dot"></span>
-        Trusted by 500+ homes &amp; offices in Lagos
-      </div>
-      <h1>Spotless spaces,<br>engineered to <span style="background:var(--grad-brand); -webkit-background-clip:text; background-clip:text; color:transparent;">shine</span>.</h1>
-      <p class="lede">David's Cleaning Services brings hotel-grade cleaning to your home, office or site — deep cleaning, post-construction clean-up, upholstery and carpet care, and fumigation, all one WhatsApp message away.</p>
-      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:30px;">
-        <a class="btn btn-primary" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I would like to book a cleaning service.'); return false;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.42a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.03 14.7 2 12.04 2Z"/></svg>
-          Book on WhatsApp
-        </a>
-        <a class="btn btn-ghost" href="services.html">
-          Explore Services
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
+<section style="padding-top:80px; padding-bottom:10px;">
+  <div class="wrap section-head center reveal in">
+    <div class="hero-badge" style="margin-left:auto; margin-right:auto;">
+      <span class="avatars">
+        <span style="background:var(--c-cyan);">C</span>
+        <span style="background:var(--c-magenta);">T</span>
+        <span style="background:var(--c-lime);">N</span>
+      </span>
+      <span class="dot"></span>
+      Trusted by 500+ homes &amp; offices in Lagos
     </div>
+    <h1>Spotless spaces,<br>engineered to <span style="background:var(--grad-brand); -webkit-background-clip:text; background-clip:text; color:transparent;">shine</span>.</h1>
+    <p class="lede" style="margin:0 auto;">David's Cleaning Services brings hotel-grade cleaning to your home, office or site — deep cleaning, post-construction clean-up, upholstery and carpet care, and fumigation, all one WhatsApp message away.</p>
+    <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:30px; justify-content:center;">
+      <a class="btn btn-primary" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I would like to book a cleaning service.'); return false;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.42a9.87 9.87 0 0 0 4.62 1.18h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7C17.19 3.03 14.7 2 12.04 2Z"/></svg>
+        Book on WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="services.html">
+        Explore Services
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
 
-    <div class="reveal in" style="position:relative; height:420px;">
-      <div id="hero-scene" style="position:absolute; inset:0;"></div>
+  <!-- Hero mockup preview: color chip + browser frame, video-reference style -->
+  <div class="wrap reveal in" style="margin-top:50px;">
+    <div class="color-chip" style="background:var(--c-magenta); --chip-glow: rgba(11,79,217,0.5);">#0B4FD9</div>
+    <div class="mockup-frame">
+      <div class="mockup-bar">
+        <div class="mockup-dots"><span></span><span></span><span></span></div>
+        <div class="mockup-icons">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+        </div>
+      </div>
+      <div class="mockup-screen" style="--screen-glow: rgba(65,192,242,0.35);">
+        <div class="stage-ring r1"></div>
+        <div class="stage-ring r2"></div>
+        <div class="stage-ring r3"></div>
+        <div class="stage-center">
+          <svg width="90" height="120" viewBox="0 0 90 130" fill="none">
+            <defs>
+              <linearGradient id="bottleGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7fd4ff"/>
+                <stop offset="55%" stop-color="#0b4fd9"/>
+                <stop offset="100%" stop-color="#08428c"/>
+              </linearGradient>
+            </defs>
+            <rect x="30" y="6" width="30" height="16" rx="4" fill="url(#bottleGrad)" opacity="0.9"/>
+            <path d="M25 22h40l6 20v70a10 10 0 0 1-10 10H29a10 10 0 0 1-10-10V42l6-20Z" fill="url(#bottleGrad)"/>
+            <path d="M25 22h40l6 20v6H19v-6l6-20Z" fill="#7fd4ff" opacity="0.5"/>
+            <circle cx="45" cy="80" r="14" fill="#04101a" opacity="0.25"/>
+            <path d="M38 80h14M45 73v14" stroke="#eaf7ff" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="stage-floor"></div>
+        <div class="stage-card" style="top:16%; right:5%; width:150px;">
+          <div style="font-size:18px; font-weight:700; color:var(--c-cyan); font-family:var(--f-display);">500+</div>
+          <div style="font-size:10px; color:var(--text-low); margin-bottom:6px;">Jobs completed in Lagos</div>
+          <svg width="100%" height="26" viewBox="0 0 120 26"><polyline points="0,20 15,12 30,16 45,6 60,14 75,4 90,10 105,2 120,8" fill="none" stroke="#41c0f2" stroke-width="2"/></svg>
+        </div>
+        <div class="stage-card" style="bottom:14%; right:5%; width:140px;">
+          <div style="font-size:12px; color:var(--c-cyan); font-weight:700;">Client Satisfaction</div>
+          <div style="font-size:10px; color:var(--text-low);">98%</div>
+        </div>
+        <a class="stage-buy" href="#" onclick="WA.open('Hello David\'s Cleaning Services, I would like to book a cleaning service.'); return false;">BOOK<br>NOW</a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ===== MARQUEE ===== -->
-<div class="marquee">
+<div class="marquee" style="margin-top:60px;">
   <div class="marquee-track" id="marquee-track"></div>
 </div>
 
@@ -258,12 +298,12 @@
 
   // Gallery: color-coded glass tiles representing completed jobs (no external images, zero load risk)
   const galleryItems = [
-    { label: 'Deep Clean — Lekki Apartment', color: '#21e6ff', icon: serviceCopy.deep.icon },
-    { label: 'Post-Construction — Ikeja Duplex', color: '#ff3daf', icon: serviceCopy.post.icon },
-    { label: 'Upholstery — Ajah Family Home', color: '#ffb648', icon: serviceCopy.upholstery.icon },
-    { label: 'Fumigation — Victoria Island Office', color: '#9a6bff', icon: serviceCopy.fumigation.icon },
-    { label: 'Deep Clean — Yaba Studio', color: '#21e6ff', icon: serviceCopy.deep.icon },
-    { label: 'Post-Construction — Ikoyi Site', color: '#ff3daf', icon: serviceCopy.post.icon },
+    { label: 'Deep Clean — Lekki Apartment', color: '#41c0f2', icon: serviceCopy.deep.icon },
+    { label: 'Post-Construction — Ikeja Duplex', color: '#0b4fd9', icon: serviceCopy.post.icon },
+    { label: 'Upholstery — Ajah Family Home', color: '#7fd4ff', icon: serviceCopy.upholstery.icon },
+    { label: 'Fumigation — Victoria Island Office', color: '#0d518c', icon: serviceCopy.fumigation.icon },
+    { label: 'Deep Clean — Yaba Studio', color: '#41c0f2', icon: serviceCopy.deep.icon },
+    { label: 'Post-Construction — Ikoyi Site', color: '#0b4fd9', icon: serviceCopy.post.icon },
   ];
   const ggrid = document.getElementById('gallery-grid');
   galleryItems.forEach(g => {
@@ -279,9 +319,9 @@
   });
 
   const testimonials = [
-    { name: 'Chiamaka O.', area: 'Lekki Phase 1', text: 'Booked a deep clean on WhatsApp before a party — the crew arrived early and the apartment looked brand new.', color: '#21e6ff' },
-    { name: 'Tunde A.', area: 'Ikeja', text: 'Our office cleaning schedule has never been this reliable. Same team every week, always thorough.', color: '#ff3daf' },
-    { name: 'Ngozi E.', area: 'Ajah', text: 'Fumigation service was fast and odor-free by the next morning. Highly recommend for new tenants.', color: '#8bff5a' },
+    { name: 'Chiamaka O.', area: 'Lekki Phase 1', text: 'Booked a deep clean on WhatsApp before a party — the crew arrived early and the apartment looked brand new.', color: '#41c0f2' },
+    { name: 'Tunde A.', area: 'Ikeja', text: 'Our office cleaning schedule has never been this reliable. Same team every week, always thorough.', color: '#0b4fd9' },
+    { name: 'Ngozi E.', area: 'Ajah', text: 'Fumigation service was fast and odor-free by the next morning. Highly recommend for new tenants.', color: '#41c0f2' },
   ];
   const tgrid = document.getElementById('testimonial-grid');
   testimonials.forEach(t => {
@@ -299,27 +339,6 @@
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  // --- Hero scene: layered floating cleaning-tool glyphs (CSS-animated SVG, no heavy deps) ---
-  const scene = document.getElementById('hero-scene');
-  const glyphs = [
-    { path: 'M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-8Z', color: '#21e6ff', top: '4%', left: '8%', size: 70, dur: '7s' },
-    { path: 'M6 20V9l6-5 6 5v11', color: '#ff3daf', top: '18%', left: '62%', size: 56, dur: '9s' },
-    { path: 'M12 2v3M6 6l2 2M18 6l-2 2M4 14a8 8 0 0 1 16 0c0 4-3 5-3 8H7c0-3-3-4-3-8Z', color: '#8bff5a', top: '52%', left: '4%', size: 58, dur: '8s' },
-    { path: 'M4 4h16v16H4V4Zm8 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z', color: '#ffb648', top: '62%', left: '58%', size: 64, dur: '10s' },
-    { path: 'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M4 12h16v6a1 1 0 0 1-1 1h-1v2h-2v-2H8v2H6v-2H5a1 1 0 0 1-1-1v-6Z', color: '#9a6bff', top: '2%', left: '40%', size: 50, dur: '11s' },
-  ];
-  glyphs.forEach((g, i) => {
-    const wrap = document.createElement('div');
-    wrap.style.cssText = `position:absolute; top:${g.top}; left:${g.left}; width:${g.size}px; height:${g.size}px; animation: float${i} ${g.dur} ease-in-out infinite;`;
-    wrap.innerHTML = `<div class="glass" style="width:100%; height:100%; display:grid; place-items:center; border-radius:20px; box-shadow:0 0 30px ${g.color}33;">
-      <svg width="52%" height="52%" viewBox="0 0 24 24" fill="none" stroke="${g.color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${g.path}"/></svg>
-    </div>`;
-    scene.appendChild(wrap);
-    const styleTag = document.createElement('style');
-    styleTag.textContent = `@keyframes float${i}{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-18px) rotate(${i%2?3:-3}deg);}}`;
-    document.head.appendChild(styleTag);
-  });
 </script>
 </body>
 </html>
