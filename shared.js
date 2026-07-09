@@ -8,10 +8,10 @@ const SITE = {
   whatsappNumber: "2349077177641", // no + or leading 0, international format
   brand: "David's Cleaning Services",
   services: [
-    { id: "deep",        name: "Deep Cleaning",                       color: "#21e6ff" },
-    { id: "post",        name: "Post-Construction & Post-Renovation", color: "#ff3daf" },
-    { id: "upholstery",  name: "Upholstery & Carpet Care",            color: "#ffb648" },
-    { id: "fumigation",  name: "Fumigation Services",                 color: "#9a6bff" },
+    { id: "deep",        name: "Deep Cleaning",                       color: "#41c0f2" },
+    { id: "post",        name: "Post-Construction & Post-Renovation", color: "#0b4fd9" },
+    { id: "upholstery",  name: "Upholstery & Carpet Care",            color: "#7fd4ff" },
+    { id: "fumigation",  name: "Fumigation Services",                 color: "#0d518c" },
   ]
 };
 
